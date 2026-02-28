@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.ContentScale.Companion.Crop
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -28,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.happybirthday.R.drawable.androidparty
 import com.example.happybirthday.ui.theme.HappyBirthdayTheme
+import androidx.compose.ui.res.stringResource
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,8 +43,8 @@ class MainActivity : ComponentActivity() {
                 )
                 {
                     GreetingImage(
-                        message = "Happy Birthday Alice!",
-                        from = "From Sasha",
+                        message = getString(R.string.happy_birthday_text),
+                        from = getString(R.string.signature_text),
             )
 
                 }
