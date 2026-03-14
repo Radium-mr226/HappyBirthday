@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
                 {
                     GreetingImage(
                         message = getString(R.string.happy_birthday_text),
-                        from = getString(R.string.signature_text),
+                        from = getString(R.string.signature_text)
             )
 
                 }
@@ -102,7 +102,9 @@ val image = painterResource(androidparty)
 @Composable
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        GreetingImage(message = "Happy Birthday Alice!",
-            from = "From Sasha")
+        GreetingImage(
+            message = stringResource(R.string.happy_birthday_text),
+            from = stringResource(R.string.signature_text)
+            )
     }
 }
